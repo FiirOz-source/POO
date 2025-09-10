@@ -1,26 +1,16 @@
-#include <iostream>
-#include <string>
+#include "lib.hpp"
 
-class animal
+// ===== Implémentation de la classe Animal =====
+animal::animal(const std::string &nom, int animal_age)
+    : name(nom), age(animal_age)
 {
-public:
-    animal(const std::string &nom, int animal_age)
-        : name(nom), age(animal_age)
-    {
-        std::cout << "Constructeur de Animal appelé pour " << name << std::endl;
-    }
+    std::cout << "Constructeur de Animal appelé pour " << name << std::endl;
+}
 
-    ~animal()
-    {
-        std::cout << "Destructeur de Animal appelé pour " << name << std::endl;
-    }
-    int get_age(void);
-    void set_age(int animal_age);
-    std::string name;
-
-private:
-    int age;
-};
+animal::~animal()
+{
+    std::cout << "Destructeur de Animal appelé pour " << name << std::endl;
+}
 
 int animal::get_age(void)
 {
@@ -32,25 +22,17 @@ void animal::set_age(int animal_age)
     age = animal_age;
 }
 
-class dog : public animal
+// ===== Implémentation de la classe Dog =====
+dog::dog(const std::string &nom, int animal_age, const std::string &race_type)
+    : animal(nom, animal_age), race(race_type)
 {
-public:
-    dog(const std::string &nom, int animal_age, const std::string &race_type)
-        : animal(nom, animal_age), race(race_type)
-    {
-        std::cout << "Constructeur de Dog appelé pour " << name << std::endl;
-    }
+    std::cout << "Constructeur de Dog appelé pour " << name << std::endl;
+}
 
-    ~dog()
-    {
-        std::cout << "Destructeur de Dog appelé pour " << name << std::endl;
-    }
-    std::string get_race(void);
-    void set_race(std::string race_type);
-
-private:
-    std::string race;
-};
+dog::~dog()
+{
+    std::cout << "Destructeur de Dog appelé pour " << name << std::endl;
+}
 
 std::string dog::get_race(void)
 {

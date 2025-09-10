@@ -1,5 +1,12 @@
 # DOCUMENTATION
 
+### Cloner le projet 
+
+Pour cloner le projet, vérifier que vous avez git sur votre pc : `git --version` et pensez à vérifier que vous avez tout configuré (clé SSH, compte github, etc...)
+
+- Cloner le projet avec : `git clone git@github.com:FiirOz-source/POO.git`
+
+
 ### Etapes pour build et lancer le programme :  
 - Pour lancer un build, se déplacer dans le dossier de l'exemple : `cd ExampleX` avec `X` le numéro de l'exemple.
 - Une fois dans le dossier de l'exemple, proceder au clean : `make clean`

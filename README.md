@@ -1,6 +1,25 @@
-# POO
-Cours de 4A POO INSA Toulouse
+# DOCUMENTATION
 
+### Etapes pour build et lancer le programme :  
+- Pour lancer un build, se déplacer dans le dossier de l'exemple : `cd ExampleX` avec `X` le numéro de l'exemple.
+- Une fois dans le dossier de l'exemple, proceder au clean : `make clean`
+- Build le projet : `make all`
+- Executer le progeamme : `./programme`
+
+### Créer sa branche de test et la modifier
+#### Comment créer une branche
+- Se déplacer dans la branche que l'on veut copier : `git switch branch_name` avec `branch_name`le nom de la branche
+- Créer une branche : `git branch branch_name`  avec `branch_name`le nom de la branche à créer
+- Se déplacer dans la branche nouvellement crée : `git switch branch_name` avec `branch_name`le nom de la branche
+
+Voilà vous avez créé votre nouvelle branche en ayant copié la branche d'origine.
+
+#### Modifications de base
+- Copier un dossier exemple et le renommer (Ex: `Exemple1` et le renomer `Exemple2` ou autre nom genre `branche_timothee`).
+- Videz le fichier `main.cpp` et le remplir de votre code, de même pour le fichier `lib.hpp`
+
+
+# COURS
 ## Portabilité C -> Cpp
 
 ```
